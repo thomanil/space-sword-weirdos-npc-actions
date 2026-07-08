@@ -45,7 +45,11 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  margin-top: 24px;
+  width: 100%;
+  margin: 24px -16px -16px;
+  padding: 24px 16px;
+  background: var(--surface);
+  border-radius: 16px 16px 0 0;
 }
 
 .support-link {
@@ -188,7 +192,7 @@
 }
 
 .d20-icon {
-  width: 32px;
+  width: 28px;
   height: 32px;
   color: var(--accent);
 }

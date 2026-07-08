@@ -10,19 +10,19 @@ export default function ActionResult({ result, onNext }) {
         Rolled
         <svg
           className="d20-icon"
-          viewBox="0 0 40 40"
+          viewBox="0 0 40 46"
           role="img"
           aria-label={`d20 showing ${roll}`}
         >
           <path
-            d="M20 2 L36 12 L36 28 L20 38 L4 28 L4 12 Z"
+            d="M20 2 L36 14 L36 32 L20 44 L4 32 L4 14 Z"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
             strokeLinejoin="round"
           />
           <path
-            d="M20 2 L20 38 M4 12 L20 20 L36 12 M4 28 L20 20 L36 28"
+            d="M20 2 L20 44 M4 14 L36 32 M36 14 L4 32"
             fill="none"
             stroke="currentColor"
             strokeWidth="1"
@@ -31,10 +31,10 @@ export default function ActionResult({ result, onNext }) {
           />
           <text
             x="20"
-            y="21"
+            y="24"
             textAnchor="middle"
             dominantBaseline="central"
-            fontSize="16"
+            fontSize="15"
             fontWeight="700"
             fill="currentColor"
           >
