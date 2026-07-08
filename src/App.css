@@ -110,6 +110,7 @@
 .unit-category__title {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   font-size: 14px;
   text-transform: uppercase;
