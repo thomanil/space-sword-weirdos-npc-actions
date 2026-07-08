@@ -47,9 +47,9 @@ function App() {
     <div className="app">
       {!result && (
         <header className="app__header">
-          <h1>Weirdos NPC Actions in solo/co-op play</h1>
-          <p className="activation-instructions">{system.activationAdvice[0]}</p>
+          <h1>Weirdos NPC Actions</h1>
           <SystemToggle systems={SYSTEMS} activeKey={system.key} onChange={handleSystemChange} />
+          <p className="activation-instructions">{system.activationAdvice[0]}</p>
         </header>
       )}
       <main className="app__main">

@@ -15,8 +15,8 @@ export default {
   name: 'Space Weirdos',
   columns: { noLos: 'No LoS', hasLos: 'Has LoS', touching: 'Touching' },
   activationAdvice: [
-    'Choose a Bad Guy models current range to see how you should activate it, based on the Bad Guy Activation lookup tables in the ruleset.',
-    "No table can cover all circumstances, so there will be times that results will need to be liberally interpreted, especially with psychics. This is fine. Just do whatever is most fun and don't worry about it.",
+    'Choose a Bad Guy models current state to see how you should activate it, based on the lookup tables in the solo/co-op ruleset.',
+    "Note: No table can cover all circumstances, so there will be times that results will need to be liberally interpreted, especially with psychics. This is fine. Just do whatever is most fun and don't worry about it.",
     'Space / Sword Weirdos is a game system created and owned by Garske Games.',
   ],
   categories: [
