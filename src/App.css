@@ -177,6 +177,14 @@
   color: #fff;
 }
 
+.reinforcements__helper {
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--text);
+  text-align: center;
+  margin: 0 0 12px;
+}
+
 /* Action result */
 
 .action-result {
@@ -210,7 +218,14 @@
 
 .action-result__action {
   font-size: 40px;
+  line-height: 1.15;
   color: var(--accent);
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.action-result__action--reinforcement {
+  font-size: 28px;
 }
 
 .action-result__definition {

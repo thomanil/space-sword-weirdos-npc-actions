@@ -51,6 +51,18 @@ export default {
       actions: MOVEMENT_ACTIONS,
     },
   ],
+  reinforcements: {
+    helperText: 'If the scenario calls for it, roll for reinforcements',
+    table: buildTable([
+      { range: '1-5', outcome: 'None' },
+      { range: '6-8', outcome: '1 Mook or Goon' },
+      { range: '9-11', outcome: '1d3 Mooks/Goons' },
+      { range: '12-14', outcome: '1 Thug or Hencher' },
+      { range: '15-17', outcome: '1d3 Thugs/Henchers' },
+      { range: '18-19', outcome: '1 Biggun, Big Shooter, or Psychic' },
+      { range: '20-20', outcome: '2 Bigguns/Big Shooters/Psychics' },
+    ]),
+  },
   categories: [
     {
       key: 'melee',

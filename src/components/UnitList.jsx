@@ -1,6 +1,6 @@
 import CategoryIcon from './CategoryIcon'
 
-export default function UnitList({ system, onRoll }) {
+export default function UnitList({ system, onRoll, onReinforce }) {
   return (
     <div className="unit-list">
       {system.categories.map((category) => (
@@ -31,6 +31,18 @@ export default function UnitList({ system, onRoll }) {
           ))}
         </section>
       ))}
+      <section className="unit-category reinforcements">
+        <h2 className="unit-category__title">
+          <CategoryIcon category="reinforcements" />
+          Reinforcements
+        </h2>
+        <p className="reinforcements__helper">{system.reinforcements.helperText}</p>
+        <div className="unit-row__buttons">
+          <button type="button" className="state-button" onClick={onReinforce}>
+            Reinforce
+          </button>
+        </div>
+      </section>
     </div>
   )
 }

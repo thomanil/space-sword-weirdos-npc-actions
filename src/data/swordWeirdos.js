@@ -62,6 +62,18 @@ export default {
       actions: MOVEMENT_ACTIONS,
     },
   ],
+  reinforcements: {
+    helperText: 'If the scenario calls for it, roll for reinforcements',
+    table: buildTable([
+      { range: '1-3', outcome: 'None' },
+      { range: '4-6', outcome: '1 Minion or Skirmisher' },
+      { range: '7-9', outcome: '1d3 Minions/Skirmishers' },
+      { range: '10-12', outcome: '1 Thug or Veteran' },
+      { range: '13-15', outcome: '1d3 Thugs/Veterans' },
+      { range: '16-18', outcome: '1 Lancer, Arbalist, or Warlock' },
+      { range: '19-20', outcome: '2 Lancers/Arbalists/Warlocks' },
+    ]),
+  },
   categories: [
     {
       key: 'melee',

@@ -16,6 +16,12 @@ const ICONS = {
   casters: (
     <path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8z" fill="currentColor" stroke="none" />
   ),
+  reinforcements: (
+    <>
+      <path d="M6 2v20" />
+      <path d="M6 3h13l-3 3.5L19 10H6" />
+    </>
+  ),
 }
 
 export default function CategoryIcon({ category }) {

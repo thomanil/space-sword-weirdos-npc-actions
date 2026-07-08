@@ -11,6 +11,18 @@ export function rollD20() {
   return Math.floor(Math.random() * 20) + 1
 }
 
+// Replaces dice notation (e.g. "1d3") inside a string with an actual rolled
+// total, so outcomes read "2 Mooks/Goons" rather than "1d3 Mooks/Goons".
+export function resolveDiceNotation(text) {
+  return text.replace(/(\d*)d(\d+)/g, (_, count, sides) => {
+    const n = count ? Number(count) : 1
+    const size = Number(sides)
+    let total = 0
+    for (let i = 0; i < n; i += 1) total += Math.floor(Math.random() * size) + 1
+    return String(total)
+  })
+}
+
 export function lookupAction(table, roll) {
   return table.find((row) => roll >= row.lo && roll <= row.hi)
 }
