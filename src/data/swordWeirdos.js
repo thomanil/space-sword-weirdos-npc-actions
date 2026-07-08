@@ -154,20 +154,25 @@ export default {
   definitions: {
     Advance:
       'The model takes Move actions until it has LoS to a Good Guy, then takes Ranged Attack actions with its remaining actions.',
-    Assassinate: 'As Fire, but all Ranged Attack actions have +1DT.',
-    Assault: 'As Attack, but the first Melee Attack action is +1DT.',
+    Assassinate:
+      'The model takes Ranged Attack actions up to the max for its weapons, but all of them have +1DT.',
+    Assault:
+      'The model takes Melee Attack actions up to the maximum for its weapons, but the first one has +1DT.',
     Attack: 'The model takes Melee Attack actions up to the maximum for its weapons.',
-    Blitz: 'As Rush, but any Melee Attack actions have +1DT.',
+    Blitz:
+      "The model's Move score is increased by 1, up to 3 max. The model then takes Move actions until it is touching the closest Good Guy model. If it has actions remaining, it takes Melee Attack actions, all of which have +1DT.",
     Cloud:
       'As a Cast Spell action, the model floods the board with magical power. The warlock and the Good Guy leader make opposed Willpower rolls. If the warlock wins, the Good Guys lose 1d3 Maneuver Points.',
     Cower: 'The model does nothing this round.',
-    Crush: 'As Attack, but all Fight actions have +1DT.',
+    Crush:
+      'The model takes Melee Attack actions up to the maximum for its weapons, and all of them have +1DT.',
     Disengage: 'The model takes a Disengage action and then a single Ranged Attack action.',
     Engage:
       'The model takes Move actions up to its maximum towards the closest Good Guy. If it has actions remaining when they touch bases, it takes a Melee Attack action.',
     Extricate: 'The model takes a Disengage action and then a Ranged Attack action with +1DT.',
     Fire: 'The model takes Ranged Attack actions up to the max for its weapons.',
-    Focus: 'As Fire, but the first Ranged Attack action is +1DT.',
+    Focus:
+      'The model takes Ranged Attack actions up to the max for its weapons, but the first one has +1DT.',
     Force:
       'As an action, the warlock moves each Good Guy touching it a ½ stick directly away. The warlock then uses a Cast Spell action.',
     Hide: 'The model uses Move actions up to its max until it is out of LoS of any Good Guys.',
@@ -176,6 +181,7 @@ export default {
       'The model takes a Disengage action, then a Move action that cannot bring it into contact with a Good Guy.',
     Rush: "The model's Move score is increased by 1, up to 3 max. The model then takes Move actions until it is touching the closest Good Guy model. If it has actions remaining, it takes Melee Attack actions.",
     Spell: 'The model takes a Cast Spell action and another action in any order.',
-    Torrent: "As Spell, but the warlock's Willpower roll is +1DT.",
+    Torrent:
+      "The model takes a Cast Spell action and another action in any order, but the warlock's Willpower roll is +1DT.",
   },
 }

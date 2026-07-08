@@ -154,20 +154,24 @@ export default {
   definitions: {
     Advance:
       'The model takes Move actions until it has LoS to a Good Guy, then takes Shoot actions with its remaining actions.',
-    Assassinate: 'As Attack, but all Shoot actions have +1DT.',
-    Assault: 'As Attack, but the first Fight action is +1DT.',
+    Assassinate:
+      'The model takes Shoot actions up to the maximum for its weapon, but all of them have +1DT.',
+    Assault:
+      'The model takes Fight actions up to the maximum for its weapon, but the first one has +1DT.',
     Attack: 'The model takes Fight actions up to the maximum for its weapon.',
-    Blitz: 'As Rush, but any Fight actions have +1DT.',
+    Blitz:
+      'The models Move score is increased by 1, up to 3 max. The model then takes Move actions until it is touching the closest Good Guy model. If it has actions remaining, it takes Fight actions, all of which have +1DT.',
     Cloud:
       'As a Psychic Power action, the model floods the battlefield with psychic noise. The psychic and the Good Guy leader make opposed Willpower rolls. If the psychic wins, the Good Guys lose a Command Point.',
     Cower: 'The model does nothing this round.',
-    Crush: 'As Attack, but all Fight actions have +1DT.',
+    Crush: 'The model takes Fight actions up to the maximum for its weapon, and all of them have +1DT.',
     Disengage: 'The model takes a Disengage action and then a single Shoot action.',
     Engage:
       'The model takes move actions up to its maximum towards the closest Good Guy. If it has actions remaining when they touch bases, it takes a Fight action.',
     Extricate: 'The model takes a Disengage action and then a Shoot action with +1DT.',
     Fire: 'The model takes Shoot actions up to the maximum for its weapon.',
-    Focus: 'As Fire, but the first Shoot action is +1DT.',
+    Focus:
+      'The model takes Shoot actions up to the maximum for its weapon, but the first one has +1DT.',
     Force:
       'As an action, the psychic moves each Good Guy touching it a ½ stick directly away. The psychic then uses a Psychic Power action.',
     Hide: 'The model uses Move actions up to its max until it is out of LoS of any Good Guys.',
@@ -176,6 +180,7 @@ export default {
     Retreat:
       'The model takes a Disengage action, then a Move action that cannot bring it into contact with a Good Guy.',
     Rush: 'The models Move score is increased by 1, up to 3 max. The model then takes Move actions until it is touching the closest Good Guy model. If it has actions remaining, it takes Fight actions.',
-    Torrent: "As Power, but the psychic's Willpower roll is +1DT.",
+    Torrent:
+      "The model takes a Psychic Power action and another action in any order, but the psychic's Willpower roll is +1DT.",
   },
 }
