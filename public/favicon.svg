@@ -1,10 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <!-- gun (upper left) -->
-  <rect x="4.5" y="14.25" width="4.2" height="9" rx="1.6" fill="#7e14ff" transform="rotate(15 4.5 14.25)"/>
-  <rect x="7.5" y="8.75" width="7" height="6.5" rx="1.4" fill="#aa3bff"/>
-  <circle cx="9.5" cy="15.75" r="2" fill="none" stroke="#0b3b57" stroke-width="1.2"/>
-  <rect x="12.5" y="11.25" width="11" height="3" rx="1" fill="#47bfff"/>
-  <rect x="22" y="11.25" width="1.5" height="3" fill="#ede6ff"/>
+  <rect x="8" y="5.2" width="3" height="2" rx="0.8" fill="#0b3b57"/>
+  <rect x="8" y="6.6" width="10" height="6.6" rx="1.6" fill="#47bfff"/>
+  <rect x="16" y="9" width="10" height="3.4" rx="1.2" fill="#c084fc"/>
+  <rect x="24.6" y="9.7" width="1.4" height="2" rx="0.4" fill="#ede6ff"/>
+  <path d="M10 12 L15 12 L13.5 22.5 L8.5 20.7 Z" fill="#7e14ff"/>
+  <rect x="11" y="13" width="2" height="2.4" rx="0.6" fill="#0b3b57"/>
 
   <!-- slash divider -->
   <line x1="6" y1="44" x2="42" y2="4" stroke="#ede6ff" stroke-width="3.4" stroke-linecap="round" stroke-opacity="0.85"/>
