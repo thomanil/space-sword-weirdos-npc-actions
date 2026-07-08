@@ -1,7 +1,9 @@
 A simple action generator for NPC characters in the miniature skirmish wargames Space Weirdos and Sword weirdos (solo/co-op games).
 
 Pick an npc character type, click their current state (Line of Sight or not, or touching one of your units). 
-The app will then perform the random d20 lookup from the relevant action table and tell you how you should activate that unit.
+The app will then perform the random d20 lookup from the relevant action table and tell you how you should activate that unit, including any applicable guidelines for that action.
+
+Togglng between Space/Sword Weirdos will adjust language and some rule logic to match that variant of the Weirdos ruleset.
 
 Mobile-friendly so you can run it on a phone screen during the game.
 
