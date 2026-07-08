@@ -1,10 +1,4 @@
-import {
-  buildTable,
-  ATTACK_ACTIONS,
-  MOVEMENT_ACTIONS,
-  RANGED_ACTIONS,
-  MELEE_ACTIONS,
-} from '../lib/actionTables'
+import { buildTable, ATTACK_ACTIONS, MOVEMENT_ACTIONS, RANGED_ACTIONS } from '../lib/actionTables'
 
 const rows = (a, b, c, d, e, f, g) => [
   { range: '1-3', noLos: a[0], hasLos: a[1], touching: a[2] },
@@ -39,12 +33,12 @@ export default {
     {
       id: 'no-attack-fallback',
       text: 'If a model rolls an action that allows attacks, but it cannot attack, it may take Move actions instead.',
-      actions: RANGED_ACTIONS,
+      actions: ATTACK_ACTIONS,
     },
     {
       id: 'target-priority',
       text: 'Bad Guys generally engage the closest Good Guy, but will attack Good Guys without cover instead of a closer model in cover.',
-      actions: RANGED_ACTIONS,
+      actions: ATTACK_ACTIONS,
     },
     {
       id: 'cover',

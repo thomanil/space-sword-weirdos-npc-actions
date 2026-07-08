@@ -1,4 +1,7 @@
 function parseRange(range) {
+  if (range.endsWith('+')) {
+    return { lo: Number(range.slice(0, -1)), hi: Infinity }
+  }
   const [lo, hi] = range.split('-').map(Number)
   return { lo, hi: hi ?? lo }
 }
@@ -57,5 +60,3 @@ export const MOVEMENT_ACTIONS = [
 ]
 
 export const RANGED_ACTIONS = ['Fire', 'Focus', 'Assassinate', 'Advance', 'Disengage', 'Extricate']
-
-export const MELEE_ACTIONS = ['Attack', 'Assault', 'Crush', 'Blitz', 'Rush', 'Engage']

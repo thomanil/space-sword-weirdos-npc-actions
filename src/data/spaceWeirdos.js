@@ -28,12 +28,12 @@ export default {
     {
       id: 'no-attack-fallback',
       text: 'If a model rolls an action that allows attacks, but it cannot attack, it may take Move actions instead.',
-      actions: RANGED_ACTIONS,
+      actions: ATTACK_ACTIONS,
     },
     {
       id: 'target-priority',
       text: 'Bad Guys generally attack the closest Good Guy, but will attack Good Guys without cover in preference to a closer model in cover.',
-      actions: RANGED_ACTIONS,
+      actions: ATTACK_ACTIONS,
     },
     {
       id: 'cover',
@@ -59,7 +59,7 @@ export default {
       { range: '12-14', outcome: '1 Thug or Hencher' },
       { range: '15-17', outcome: '1d3 Thugs/Henchers' },
       { range: '18-19', outcome: '1 Biggun, Big Shooter, or Psychic' },
-      { range: '20-20', outcome: '2 Bigguns/Big Shooters/Psychics' },
+      { range: '20+', outcome: '2 Bigguns/Big Shooters/Psychics' },
     ]),
   },
   categories: [
