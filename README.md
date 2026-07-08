@@ -4,6 +4,8 @@ Pick an npc character type and their current state. The app will then perform th
 
 Mobile-friendly so you can run it on a phone screen during the game.
 
+Available publicly at [thomanil.github.io/space-sword-weirdos-npc-actions](https://thomanil.github.io/space-sword-weirdos-npc-actions/).
+
 | Unit list | Lookup result |
 | --- | --- |
 | ![Screenshot of the app showing the unit list for Space Weirdos](docs/screenshot.png) | ![Screenshot of the app showing a d20 lookup result](docs/screenshot-lookup.png) |
