@@ -58,7 +58,7 @@ export default function ActionResult({ result, advice, guidelines = [], onNext }
         </div>
       )}
       <button type="button" className="next-unit-button" onClick={onNext}>
-        Next unit
+        Next
       </button>
       {advice && <p className="activation-advice">{advice}</p>}
     </div>
