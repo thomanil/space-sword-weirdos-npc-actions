@@ -25,3 +25,7 @@ Other commands:
 
 - `npm run build` — build a production bundle into `dist/`
 - `npm run preview` — locally preview the production build
+
+## Credits
+
+Space / Sword Weirdos is a game system created and owned by Garske Games. Support them by buying the game: [wargamevault.com/en/publisher/7692/garske-games](https://www.wargamevault.com/en/publisher/7692/garske-games).
