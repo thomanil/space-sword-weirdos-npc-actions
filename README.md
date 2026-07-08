@@ -4,6 +4,10 @@ Pick an npc character type and their current state. The app will then perform th
 
 Mobile-friendly so you can run it on a phone screen during the game.
 
+| Unit list | Lookup result |
+| --- | --- |
+| ![Screenshot of the app showing the unit list for Space Weirdos](docs/screenshot.png) | ![Screenshot of the app showing a d20 lookup result](docs/screenshot-lookup.png) |
+
 ## Running locally
 
 Requires [Node.js](https://nodejs.org/) (v18+) and npm.
