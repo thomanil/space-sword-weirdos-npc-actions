@@ -119,6 +119,10 @@
   margin-bottom: 8px;
 }
 
+.reinforcements .unit-category__title {
+  margin-bottom: 20px;
+}
+
 .category-icon {
   flex-shrink: 0;
   color: var(--accent);
