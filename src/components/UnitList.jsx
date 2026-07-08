@@ -11,7 +11,10 @@ export default function UnitList({ system, onRoll }) {
           </h2>
           {category.units.map((unit) => (
             <div key={unit.key} className="unit-row">
-              <span className="unit-row__label">{unit.label}</span>
+              <span className="unit-row__label">
+                {unit.label}
+                <span className="unit-row__blurb">{unit.blurb}</span>
+              </span>
               <div className="unit-row__buttons">
                 {Object.entries(system.columns).map(([columnKey, columnLabel]) => (
                   <button

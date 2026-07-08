@@ -27,6 +27,7 @@ export default {
         {
           key: 'minion',
           label: 'Minion',
+          blurb: 'Up to 12 points, no ranged weapon',
           table: buildTable(
             rows(
               ['Cower', 'Hide', 'Retreat'],
@@ -42,6 +43,7 @@ export default {
         {
           key: 'thug',
           label: 'Thug',
+          blurb: '13-19 points, no ranged weapon',
           table: buildTable(
             rows(
               ['Cower', 'Hide', 'Attack'],
@@ -57,6 +59,7 @@ export default {
         {
           key: 'lancer',
           label: 'Lancer',
+          blurb: '20+ points, no ranged weapon',
           table: buildTable(
             rows(
               ['Move', 'Engage', 'Attack'],
@@ -78,6 +81,7 @@ export default {
         {
           key: 'skirmisher',
           label: 'Skirmisher',
+          blurb: 'Up to 12 points, has ranged weapon',
           table: buildTable(
             rows(
               ['Cower', 'Hide', 'Retreat'],
@@ -93,6 +97,7 @@ export default {
         {
           key: 'veteran',
           label: 'Veteran',
+          blurb: '13-19 points, has ranged weapon',
           table: buildTable(
             rows(
               ['Cower', 'Hide', 'Disengage'],
@@ -108,6 +113,7 @@ export default {
         {
           key: 'arbalist',
           label: 'Arbalist',
+          blurb: '20+ points, has ranged weapon',
           table: buildTable(
             rows(
               ['Engage', 'Engage', 'Disengage'],
@@ -129,6 +135,7 @@ export default {
         {
           key: 'warlock',
           label: 'Warlock',
+          blurb: 'Any points, can cast spells',
           table: buildTable(
             rows(
               ['Move', 'Cloud', 'Disengage'],

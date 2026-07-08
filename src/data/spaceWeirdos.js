@@ -27,6 +27,7 @@ export default {
         {
           key: 'mooks',
           label: 'Mook',
+          blurb: 'Up to 12 points, no FP score',
           table: buildTable(
             rows(
               ['Cower', 'Hide', 'Retreat'],
@@ -42,6 +43,7 @@ export default {
         {
           key: 'thugs',
           label: 'Thug',
+          blurb: '13-19 points, no FP score',
           table: buildTable(
             rows(
               ['Cower', 'Hide', 'Attack'],
@@ -57,6 +59,7 @@ export default {
         {
           key: 'bigguns',
           label: 'Biggun',
+          blurb: '20+ points, no FP score',
           table: buildTable(
             rows(
               ['Move', 'Engage', 'Attack'],
@@ -78,6 +81,7 @@ export default {
         {
           key: 'goons',
           label: 'Goon',
+          blurb: 'Up to 12 points, has FP score',
           table: buildTable(
             rows(
               ['Cower', 'Hide', 'Retreat'],
@@ -93,6 +97,7 @@ export default {
         {
           key: 'henchers',
           label: 'Hencher',
+          blurb: '13-19 points, has FP score',
           table: buildTable(
             rows(
               ['Cower', 'Hide', 'Disengage'],
@@ -108,6 +113,7 @@ export default {
         {
           key: 'bigShooters',
           label: 'Big Shooter',
+          blurb: '20+ points, has FP score',
           table: buildTable(
             rows(
               ['Engage', 'Engage', 'Disengage'],
@@ -129,6 +135,7 @@ export default {
         {
           key: 'psychics',
           label: 'Psychic',
+          blurb: 'Any points, has psychic powers',
           table: buildTable(
             rows(
               ['Move', 'Cloud', 'Disengage'],

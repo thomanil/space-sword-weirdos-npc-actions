@@ -135,10 +135,20 @@
 }
 
 .unit-row__label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
   font-size: 17px;
   font-weight: 600;
   color: var(--text-h);
   flex: 1 0 100%;
+}
+
+.unit-row__blurb {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text);
 }
 
 .unit-row__buttons {
