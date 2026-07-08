@@ -177,14 +177,6 @@
   color: #fff;
 }
 
-.reinforcements__helper {
-  font-size: 13px;
-  line-height: 1.4;
-  color: var(--text);
-  text-align: center;
-  margin: 0 0 12px;
-}
-
 /* Action result */
 
 .action-result {

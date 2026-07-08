@@ -63,7 +63,7 @@ export default {
     },
   ],
   reinforcements: {
-    helperText: 'If the scenario calls for it, roll for reinforcements',
+    helperText: '(If the scenario calls for it)',
     table: buildTable([
       { range: '1-3', outcome: 'None' },
       { range: '4-6', outcome: '1 Minion or Skirmisher' },

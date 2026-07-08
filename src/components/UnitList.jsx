@@ -36,7 +36,6 @@ export default function UnitList({ system, onRoll, onReinforce }) {
           <CategoryIcon category="reinforcements" />
           Reinforcements
         </h2>
-        <p className="reinforcements__helper">{system.reinforcements.helperText}</p>
         <div className="unit-row__buttons">
           <button type="button" className="state-button" onClick={onReinforce}>
             Reinforce
