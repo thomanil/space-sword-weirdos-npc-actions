@@ -47,21 +47,24 @@ function App() {
     <div className="app">
       {!result && (
         <header className="app__header">
-          <h1>Weirdos NPC Actions</h1>
+          <h1>Weirdos NPC Actions in solo/co-op play</h1>
           <p className="activation-instructions">{system.activationAdvice[0]}</p>
           <SystemToggle systems={SYSTEMS} activeKey={system.key} onChange={handleSystemChange} />
         </header>
       )}
       <main className="app__main">
         {result ? (
-          <ActionResult result={result} onNext={() => setResult(null)} />
+          <ActionResult
+            result={result}
+            advice={system.activationAdvice[1]}
+            onNext={() => setResult(null)}
+          />
         ) : (
           <UnitList system={system} onRoll={handleRoll} />
         )}
       </main>
       {!result && (
         <footer className="app__footer">
-          <p className="activation-advice">{system.activationAdvice[1]}</p>
           <div className="game-credit">
             <p className="activation-advice">{system.activationAdvice[2]}</p>
             <a

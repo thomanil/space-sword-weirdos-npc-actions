@@ -1,4 +1,4 @@
-export default function ActionResult({ result, onNext }) {
+export default function ActionResult({ result, advice, onNext }) {
   const { unitLabel, columnLabel, roll, action, definition } = result
 
   return (
@@ -47,6 +47,7 @@ export default function ActionResult({ result, onNext }) {
       <button type="button" className="next-unit-button" onClick={onNext}>
         Next unit
       </button>
+      {advice && <p className="activation-advice">{advice}</p>}
     </div>
   )
 }
