@@ -52,7 +52,6 @@ export default {
     },
   ],
   reinforcements: {
-    helperText: '(If the scenario calls for it)',
     table: buildTable([
       { range: '1-5', outcome: 'None' },
       { range: '6-8', outcome: '1 Mook or Goon' },
