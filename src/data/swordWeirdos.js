@@ -39,12 +39,12 @@ export default {
     {
       id: 'no-attack-fallback',
       text: 'If a model rolls an action that allows attacks, but it cannot attack, it may take Move actions instead.',
-      actions: ATTACK_ACTIONS,
+      actions: RANGED_ACTIONS,
     },
     {
       id: 'target-priority',
       text: 'Bad Guys generally engage the closest Good Guy, but will attack Good Guys without cover instead of a closer model in cover.',
-      actions: ATTACK_ACTIONS,
+      actions: RANGED_ACTIONS,
     },
     {
       id: 'cover',
@@ -54,7 +54,7 @@ export default {
     {
       id: 'weapon-properties',
       text: 'Bad Guys will use weapon properties like powerful and crushing.',
-      actions: MELEE_ACTIONS,
+      actions: ATTACK_ACTIONS,
     },
     {
       id: 'objectives',

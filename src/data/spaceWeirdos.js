@@ -28,12 +28,12 @@ export default {
     {
       id: 'no-attack-fallback',
       text: 'If a model rolls an action that allows attacks, but it cannot attack, it may take Move actions instead.',
-      actions: ATTACK_ACTIONS,
+      actions: RANGED_ACTIONS,
     },
     {
       id: 'target-priority',
       text: 'Bad Guys generally attack the closest Good Guy, but will attack Good Guys without cover in preference to a closer model in cover.',
-      actions: ATTACK_ACTIONS,
+      actions: RANGED_ACTIONS,
     },
     {
       id: 'cover',
