@@ -57,6 +57,7 @@ function App() {
           <ActionResult
             result={result}
             advice={system.activationAdvice[1]}
+            guidelines={system.guidelines}
             onNext={() => setResult(null)}
           />
         ) : (

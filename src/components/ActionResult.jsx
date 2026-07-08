@@ -1,5 +1,8 @@
-export default function ActionResult({ result, advice, onNext }) {
+export default function ActionResult({ result, advice, guidelines = [], onNext }) {
   const { unitLabel, columnLabel, roll, action, definition } = result
+  const applicableGuidelines = guidelines.filter(
+    (guideline) => guideline.universal || guideline.actions?.includes(action),
+  )
 
   return (
     <div className="action-result">
@@ -44,6 +47,16 @@ export default function ActionResult({ result, advice, onNext }) {
       </p>
       <h2 className="action-result__action">{action}</h2>
       <p className="action-result__definition">{definition}</p>
+      {applicableGuidelines.length > 0 && (
+        <div className="action-result__guidelines">
+          <p className="action-result__guidelines-title">Activation guidelines</p>
+          <ul>
+            {applicableGuidelines.map((guideline) => (
+              <li key={guideline.id}>{guideline.text}</li>
+            ))}
+          </ul>
+        </div>
+      )}
       <button type="button" className="next-unit-button" onClick={onNext}>
         Next unit
       </button>

@@ -1,4 +1,4 @@
-import { buildTable } from '../lib/actionTables'
+import { buildTable, ATTACK_ACTIONS, MOVEMENT_ACTIONS, RANGED_ACTIONS } from '../lib/actionTables'
 
 const rows = (a, b, c, d, e, f, g) => [
   { range: '1-3', noLos: a[0], hasLos: a[1], touching: a[2] },
@@ -18,6 +18,38 @@ export default {
     'Choose a Bad Guy models current state to see how you should activate it, based on the lookup tables in the solo/co-op ruleset.',
     "Note: No table can cover all circumstances, so there will be times that results will need to be liberally interpreted, especially with psychics. This is fine. Just do whatever is most fun and don't worry about it.",
     'Space / Sword Weirdos is a game system created and owned by Garske Games.',
+  ],
+  guidelines: [
+    {
+      id: 'ready',
+      text: 'A Bad Guy must be ready before it can perform the action above. If it is staggered or down it must take appropriate Recover or Stand actions before taking the action above.',
+      universal: true,
+    },
+    {
+      id: 'no-attack-fallback',
+      text: 'If a model rolls an action that allows attacks, but it cannot attack, it may take Move actions instead.',
+      actions: ATTACK_ACTIONS,
+    },
+    {
+      id: 'target-priority',
+      text: 'Bad Guys generally attack the closest Good Guy, but will attack Good Guys without cover in preference to a closer model in cover.',
+      actions: ATTACK_ACTIONS,
+    },
+    {
+      id: 'cover',
+      text: 'Bad Guys will move into cover if available.',
+      actions: MOVEMENT_ACTIONS,
+    },
+    {
+      id: 'aim',
+      text: 'Bad Guys will use the Aim action against Good Guys with Defense scores of 2d10.',
+      actions: RANGED_ACTIONS,
+    },
+    {
+      id: 'objectives',
+      text: 'In scenarios with objectives, Bad Guys may move towards those instead of Good Guys.',
+      actions: MOVEMENT_ACTIONS,
+    },
   ],
   categories: [
     {

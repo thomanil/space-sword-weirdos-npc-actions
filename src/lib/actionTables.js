@@ -14,3 +14,36 @@ export function rollD20() {
 export function lookupAction(table, roll) {
   return table.find((row) => roll >= row.lo && roll <= row.hi)
 }
+
+// Shared action groupings used to scope activation guidelines to the
+// actions they're actually relevant for.
+export const ATTACK_ACTIONS = [
+  'Attack',
+  'Assault',
+  'Crush',
+  'Assassinate',
+  'Fire',
+  'Focus',
+  'Disengage',
+  'Extricate',
+  'Engage',
+  'Rush',
+  'Blitz',
+  'Advance',
+]
+
+export const MOVEMENT_ACTIONS = [
+  'Move',
+  'Hide',
+  'Engage',
+  'Advance',
+  'Rush',
+  'Blitz',
+  'Retreat',
+  'Disengage',
+  'Extricate',
+]
+
+export const RANGED_ACTIONS = ['Fire', 'Focus', 'Assassinate', 'Advance', 'Disengage', 'Extricate']
+
+export const MELEE_ACTIONS = ['Attack', 'Assault', 'Crush', 'Blitz', 'Rush', 'Engage']
